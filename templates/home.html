@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="bsec-1" id="bsec-1">
+    <div class="banner">
+        <div class="ban1">
+            <h1><span class="banspan">N</span>ivedita</h1>
+            <h4>Infotech</h4>
+        </div>
+        <hr style="height: 100px;">
+        <div class="ban2">
+            <p>Nivedita Infotech helps businesses <br> create impactful web and mobile applications. <br> We work with business firms of all shapes and sizes .</p>
+        </div>
+    </div>
+    <div class="post">
+        <p>We create world class software experiences. <br> We design and build custom web and mobile applications with a focus on remarkable user experience.</p>
+    </div>
+</section>
+<section class="bsec-2">
+    <div class="rit1">
+        <div class="box1-col bc1">
+            <h2>Secure & <br>Reliable</h2>
+            <p>Connect to the world with secure websites </p>
+        </div>
+        <div class="box1-col">
+            <div class="col-box">
+                <h2>Free <br>Hosting</h2>
+                <p>Free domain for 2 years and 5 years free hosting</p>
+            </div>
+            <div class="col-box">
+                <h2>100% <br>Guaranteed</h2>
+                <p>We take care of all your needs </p>
+            </div>
+        </div>
+    </div>
+    <div class="lft1">
+        <div class="sets">
+            <h3>REQUEST A FREE <br>CALL BACK</h3>
+            <p>Let's Build Your Website!</p>
+            <div>
+                <form action="" method="post" class="forms" autocomplete="off">
+                    {% csrf_token %}
+                    <input type="text" name="name" placeholder="Name *" required>
+                    <input  type="email" name="email" placeholder="Email *" required>
+                    <input type="text" name="phone" placeholder="Phone no. *" required>
+                    <textarea class="tarea" cols="30" rows="10" name="desc" placeholder="Description (optional)"></textarea>
+                    <button type="submit">Submit Messages</button>
+                </form>
+                {% if messages %}
+                    {% for message in messages %}
+                    <p style="color: rgb(38, 216, 133);">{{message}}</p>
+                    {% endfor %}
+                {% endif %}
+                
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bsec-3" id="services">
+    <div class="sec3tit">
+        <h2>Our Services</h2>
+    </div>
+    <div class="bsecb">            
+        <div class="serbox">
+            <img src="{% static 'images/web-design.png' %}" alt="">
+            <h2>Web Designing</h2>
+            <p>We build responsive designs <br>with animated works</p>
+        </div>
+        <div class="serbox">
+            <img src="{% static 'images/web-development.png' %}" alt="">
+            <h2>Web Development</h2>
+            <p>We develop premium websites <br>and web applications</p>
+        </div>
+        <div class="serbox">
+            <img src="{% static 'images/ux.png' %}" alt="">
+            <h2>Software Development</h2>
+            <p>Unlock your potential with intelligent software</p>
+        </div>
+        <div class="serbox">
+            <img src="{% static 'images/development.png' %}" alt="">
+            <h2>Mobile App Development</h2>
+            <p>We utilize mobile experiences driven by strategy, design and technology.</p>
+        </div>
+        <div class="serbox">
+            <img src="{% static 'images/maketing.png' %}" alt="">
+            <h2>Digital Marketting</h2>
+            <p>Outsmart the competition with best-in-class digital marketing services</p>
+        </div>
+        <div class="serbox">
+            <img src="{% static 'images/illustration.png' %}" alt="">
+            <h2>Graphic Designing</h2>
+            <p>Empowering your brand with stunning visuals</p>
+        </div>
+    </div>
+</section>
+<section class="bsec-4">
+    <div class="contact">
+        <div class="condiv con1">
+            <h1><a href="#bsec-1">Nivedita <span>Infotech</span></a></h1>
+            <p>We deliver high-quality software experiences on time and on budget. Our team is located in Trichy, Tamilnadu, India.</p>
+            <ul>
+                <li><a href="" target="_blank"><img src="{% static 'images/linkedin.png' %}" alt=""></a></li>
+                <li><a href="https://wa.me/918754002475" target="_blank"><img src="{% static 'images/whatsapp.png' %}" alt=""></a></li>
+                <li><a href="https://www.instagram.com/nivedita_academy_?utm_source=qr&igsh=MWYxbmhnMTFuZXJmZQ==" target="_blank"><img src="{% static 'images/instagram.png' %}" alt=""></a></li>
+                <li><a href=""><img src="{% static 'images/facebook.png' %}" alt=""></a></li>
+                <li><a href=""><img src="{% static 'images/youtube.png' %}" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="condiv conum">
+            <h2><a href="./contact.html"><u>Contact Us</u></a></h2>
+            <p><a href="https://maps.app.goo.gl/Xg1zipYrrgAomn188" target="_blank">Nivedita infotech, 3rd Floor, Rohan's Arcade,</a></p>
+            <p><a href="https://maps.app.goo.gl/Xg1zipYrrgAomn188" target="_blank">10th cross, Thilai Nagar, Trichy-06</a></p>
+            <p><a href="tel://8754002475"><i class="fa fa-phone"></i> +91 8754002475</a></p>
+            <p><a href="mailto://"><i class="fa fa-envelope"></i> abc@gmail.com</a></p>
+        </div>
+        <div class="condiv conser">
+            <h2><u>Services</u></h2>
+            <div class="serlist">
+                <ul>
+                    <li><a href="./carint.html">career</a></li>
+                    <li><a href="./carint.html">Internship</a></li>
+                    <li><a href="">Web Designing</a></li>
+                    <li><a href="">Mobile App Development</a></li>
+                    
+                </ul>
+                <ul>
+                    <li><a href="">Software Development</a></li>
+                    <li><a href="">Web Development</a></li>
+                    <li><a href="">Digital Marketting</a></li>
+                    <li><a href="">Graphic Designing</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

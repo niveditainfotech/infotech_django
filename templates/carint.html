@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="carsec1">
+    <div class="car-l">
+        <h1>Careers &<br><span>Internship</span></h1>
+        <div class="carqoute">                
+            <p>Do what you love and sucess will follow. Passion is the future behind a successful career.</p>
+        </div>
+    </div>
+    <div class="car-r">
+        <img src="./images/career-path.png" alt="">
+    </div>
+</section>
+<section class="carsec2" id="intern">
+    <div class="intern-l">
+        <h2>Internship</h2>
+        <img src="./images/intern.png" alt="">
+        <p>I hope your internship lands you the affair of your dreams.</p>
+    </div>
+    <div class="intern-r">
+        <div class="inform">
+            <h3>Apply for internship</h3>
+            <form action="" method="post">
+                <input type="text" placeholder="Name *" required>
+                <input type="email" placeholder="Email *" required>
+                <input type="text" placeholder="Phone No. *" required>
+                <select name="" required>
+                    <option value="" id="courses">Select courses *</option>
+                    <option value="pyhton full stack">Python full stack</option>
+                    <option value="java full stack">Java full stack</option>
+                    <option value="Java programming">Java programming</option>
+                    <option value="Python programming">Python programming</option>
+                    <option value="Embedded">Embedded System-IOT + Linux</option>
+                    <option value="UI/UX">UI/UX</option>                    
+                </select>
+                <select name="" required>
+                    <option value="">Duration of Internship *</option>
+                    <option value="">15 Days</option>
+                    <option value="">1 Month</option>
+                    <option value="">3 Months</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+            <a href="tel://"><button class="but">Call for Internship</button></a>
+        </div>
+    </div>
+</section>
+<section class="carsec3">
+    <div class="carr-l">
+        <div class="carform">
+            <h3>Send Resume</h3>
+            <form action="" method="post">
+                <input type="text" placeholder="Name *" required>
+                <input type="email" placeholder="Email *" required>
+                <input type="text" placeholder="Phone No. *" required>
+                <select name="" required>
+                    <option value="">Select role *</option>                    
+                    <option value="Web Devepolment">Web Devepolment</option>                    
+                    <option value="Web Designer">Web Designer</option>                    
+                    <option value="Software Developer">Software Developer</option>                    
+                    <option value="Mobile App">Mobile App Developer</option>                    
+                    <option value="Graphics Designer">Graphics Designer</option>
+                    <option value="Office Admin">Office Admin</option>                    
+                </select>
+                <input type="file" required>
+                <button type="submit">Apply</button>
+            </form>
+        </div>
+    </div>
+    <div class="carr-r">
+        <h2>Careers</h2>
+        <img src="./images/career-choice.png" alt="">
+    </div>
+    
+</section>
+{% end block %}

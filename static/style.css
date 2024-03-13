@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --mainback:rgb(42, 99, 165);
+    --secback:#40679E;
+    --bg1:#51829B;
+    --bg2:#F6995C;
+}
+
+html{
+  font-family: "Open Sans";
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.bsec-0{
+    width: 100vw;
+    position: absolute;
+}
+.bsec-1{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)),url("./images/bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.logo{
+    margin: 20px 30px;
+    transition: .7s;
+}
+.nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul{
+    transition: .7s;
+    list-style: none;
+    display: flex;
+    margin: 20px;
+}
+.nav ul li{
+    margin: 20px;
+}
+.active{
+    display: none;
+    transition: .7s linear;
+}
+.nav ul li:hover .in-nav{
+    position: absolute;
+    display: block;
+    z-index: 2;
+}
+.nav ul li:hover .in-nav ul{
+    display: block;
+    margin-left: -10px;
+}
+.nav ul li:hover .in-nav ul li{
+    padding: 8px;
+}
+.in-nav ul li:hover{
+    border-bottom: 1px solid white;
+}
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 40%;
+    transform: translateY(-50%);
+    align-items: center;
+    transition: .7s;
+}
+
+.ban1{
+    margin: 20px;
+    transition: .8s;
+}
+.ban1 h1{
+    font-size: 70px;
+    background: -webkit-linear-gradient(rgb(42, 99, 165), #fff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ban1 h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 20px;
+}
+.banspan{
+    color: rgb(42, 99, 165);
+}
+.ban2{
+    margin: 20px;
+    transition: .7s;
+}
+
+.ban2 p{
+    font-size: 20px;
+}
+
+.post{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 2;
+}
+
+
+/* section 2 in home */
+
+.bsec-2{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("./images/bg2.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.rit1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100vh;
+    width: 45vw;
+}
+.bc1{
+    width: 200px;
+    margin-right: 60px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+.bc1 h2{
+    margin-bottom: 10px;
+    color: black;
+}
+.bc1 p{
+    color: gray;
+}
+.box1-col{
+    display: flex;
+    flex-direction: column;
+}
+.col-box{
+    width: 200px;
+    padding: 30px;
+    margin: 30px 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+.col-box h2{
+    margin-bottom: 10px;
+}
+.col-box p{
+    color: gray;
+}
+.lft1{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.lft1 h3{
+    margin: 10px;
+}
+
+.lft1 p{
+    margin-bottom: 20px;
+}
+.sets{
+    border: 1px solid var(--mainback);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--mainback);
+    color: #fff;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    
+}
+.forms input{
+    border: 1px solid #fff;
+    color: white;
+    background-color: var(--mainback);
+    margin: 10px;
+    width: 270px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.forms input::placeholder{
+    color: white;
+}
+.forms textarea::placeholder{
+    color: white;
+}
+.tarea{
+    width: 270px;
+    margin: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    background-color: var(--mainback);
+    resize: none;
+    padding: 10px;
+}
+.forms button{
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to right,var(--bg1),var(--bg2));
+    font-size: 1.1em;
+    font-weight: 600;
+    color: white;
+    
+}
+
+
+/* section-3 services */
+
+.bsec-3{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.bsecb{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sec3tit h2{
+    margin: 50px 20px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--mainback);
+}
+.serbox{
+    border-radius: 5px;
+    width: 350px;
+    padding: 30px;
+    margin: 40px;
+    background-color: aliceblue;
+}
+.serbox:hover{
+    border: 1px solid var(--mainback);
+}
+.serbox img{
+    width: 50px;
+}
+.serbox h2{
+    margin: 10px auto;
+}
+.serbox h2:hover{
+    color: var(--secback);
+}
+.serbox p{
+    color: gray;
+}
+
+/* section-4 contact */
+
+.bsec-4{
+    position: relative;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(42,99,165,0.7)),url("./images/conbg.jpg") ;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    width: 100vw;
+    height: fit-content;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+}
+.condiv{
+    flex: 1;
+}
+.con1{
+    margin: 30px;    
+}
+.con1 h1{
+    text-transform: uppercase;
+    color: var(--bg1);    
+}
+.con1 h1 span{
+    color: var(--bg2);
+}
+.con1 p{
+    margin: 20px auto;
+    font-size: 1.09em;
+    line-height: 2;
+}
+.con1 ul{    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.con1 ul li{
+    list-style: none;
+}
+
+.con1 a img{
+    margin: 10px 10px;
+    width: 35px;
+}
+.con1 a img:hover{
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 2px whitesmoke;
+}
+
+.conum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.conum h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.conum p{
+    line-height: 2.2;
+}
+.conum p a:hover{
+    color: gray;
+}
+.conser{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.conser h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+.serlist{
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.serlist ul{
+    list-style: none;
+    margin-left: 10px;
+    line-height: 2.5;
+}
+.serlist ul li a:hover{
+    color: gray;
+}
+
+/* contact page */
+
+
+.conbody{
+    height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+}
+.conbody h2{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--mainback);
+}
+.conform{
+    display: flex;
+    flex-wrap: wrap;
+    border: .1px solid var(--mainback);
+    box-shadow: 0px 0px 10px 1px var(--mainback);
+    border-radius: 10px;
+}
+.conf-r{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.conf-r h3{
+    text-transform: uppercase;
+    color: var(--mainback);
+}
+.formcon{
+    display: flex;
+    flex-direction: column;
+}
+
+.formcon .confin{
+    margin: 15px;
+    padding: 8px;
+    border-radius: 7px;
+    border: none;
+    border: 1px solid var(--mainback);
+}
+.confin::placeholder{
+    color: var(--secback);
+}
+.conbtn{
+    display: flex;
+
+}
+.formcon button{
+    margin: 10px auto;
+    width: 80px;
+    height: 25px;
+    background-color: var(--mainback);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px gray;
+    color: white;
+}
+.formcon button:hover{
+    background-color: var(--secback);
+}
+.conf-l{
+    display: flex;
+    flex-direction: column;    
+    border-radius: 10px;
+    padding: 30px;
+    width: 25vw;
+    background-color: var(--mainback);
+    color: white;
+}
+.conf-l h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+.conf-l img{
+    width: 30px;
+}
+.itxt{
+    display: flex;
+    margin: 20px 0;
+    line-height: 1.4;
+}
+.itxt p{
+    margin: 0 20px;
+}
+
+/* career and intern */
+
+
+.carsec1{
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("./images/carbg.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+.car-r{
+    margin-left: 60px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.car-l span{
+    color: var(--mainback);
+}
+.car-l{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.car-l h1{
+    margin: 30px auto;
+    font-size: 3.5em;
+}
+.carqoute{
+    margin-top: 20%;
+}
+.car-l p{
+    margin: 10px;
+    line-height: 2;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 10px;
+    width: 40vw;
+}
+
+.carsec1{
+    
+}
+
+/* Intern form */
+
+.carsec2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    background-image: url('./images/inbg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.intern-l{
+    padding-top: 3%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--mainback);
+}
+
+.intern-l img{
+    position: relative;
+    width: 400px;
+    left: 40%;
+    transform: translateX(-50%);
+}
+.intern-l p{
+    margin-left: 50px;
+}
+
+.intern-r{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+.inform{
+    background: linear-gradient(var(--secback), aqua);
+    padding: 30px;
+    border-radius: 10px;
+}
+.intern-r form{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+.intern-r form input, .intern-r form select{
+    border: none;
+    border-radius: 5px;
+    margin: 15px auto;
+    padding: 7px;
+    width: 20em;
+    color: var(--mainback);
+}
+
+.intern-r form button{
+    position: relative;
+    width: fit-content;
+    padding: 10px ;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    border-radius: 10px;
+    background-color: var(--secback);
+    color: white;
+}
+
+.intern-r .but{
+    border: none;
+    border-radius: 10px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 8px;
+    background: linear-gradient(var(--bg1),var(--bg2));
+    color: white;
+}
+
+.intern-r form input::placeholder{
+    color: var(--mainback);
+}
+.carsec2{
+}
+
+/* Career form */
+
+.carsec3{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.carr-l{
+    flex: 1;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carform{
+    background: linear-gradient( #4b6cb7 0%, #182848 100%);
+    color: white;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carform form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 30px auto;
+}
+
+.carform form input, .carform form select{
+    margin: 10px auto;
+    padding: 8px;
+    width: 20em;
+    border: none;
+    border-radius: 5px;
+}
+
+.carform button{
+    background-color: var(--secback);
+    color: white;
+    position: relative;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carr-r{
+    display: flex;
+    flex: 1;
+    width: 50%;
+    text-transform: uppercase;
+    flex-direction: column;
+}
+.carr-r h2{
+    color: var(--bg1);
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+    left: 40%;
+    transform: translateX(-50%);
+}
+.carr-r img{
+    margin: 50px;
+    width: 400px;
+}
