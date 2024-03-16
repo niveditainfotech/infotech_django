@@ -20,3 +20,13 @@ class contactMsg(models.Model):
 
     def __str__(self):
         return self.name
+    
+class Intermship(models.Model):
+    name=models.CharField(max_length=20)
+    email=models.EmailField()
+    phone=models.CharField(max_length=10)
+    course=models.CharField(max_length=20)
+    duration=models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.name

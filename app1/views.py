@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from django.contrib import messages
-from .models import CallReq, contactMsg
+from .models import CallReq, contactMsg, Intermship
 
 # Create your views here.
 def adminive(request):
@@ -30,4 +30,18 @@ def contact(request):
         return redirect("contacts")
     
     return render(request,"contact.html")
+
+def career(request):
+    if request.method == 'POST':
+        name=request.POST['name']
+        email=request.POST['email']
+        phone=request.POST['phone']
+        course=request.POST['course']
+        duration=request.POST['days']
+        Intermship.objects.create(name=name,email=email,phone=phone,course=course,duration=duration).save()
+
+        messages.success(request,"Submitted successfully..")
+        return redirect('careerintern')
+
+    return render(request,"carint.html")
         

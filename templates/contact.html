@@ -6,7 +6,8 @@
     <div class="conform">
         <div class="conf-r">
             <h3>Get in touch</h3>
-            <form action="" class="formcon">
+            <form action="" method="post" class="formcon">
+                {% csrf_token %}
                 <input class="confin" type="text" required placeholder="Name *" name="namein">
                 <input class="confin" type="email" required placeholder="Email *" name="emailin">
                 <input class="confin" type="text" required placeholder="Phone No. *" name="noin">

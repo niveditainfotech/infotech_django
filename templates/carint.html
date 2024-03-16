@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 <section class="carsec1">
     <div class="car-l">
@@ -8,23 +9,24 @@
         </div>
     </div>
     <div class="car-r">
-        <img src="./images/career-path.png" alt="">
+        <img src="{% static 'images/career-path.png' %}" alt="">
     </div>
 </section>
 <section class="carsec2" id="intern">
     <div class="intern-l">
         <h2>Internship</h2>
-        <img src="./images/intern.png" alt="">
+        <img src="{% static 'images/intern.png' %}" alt="">
         <p>I hope your internship lands you the affair of your dreams.</p>
     </div>
     <div class="intern-r">
         <div class="inform">
             <h3>Apply for internship</h3>
-            <form action="" method="post">
-                <input type="text" placeholder="Name *" required>
-                <input type="email" placeholder="Email *" required>
-                <input type="text" placeholder="Phone No. *" required>
-                <select name="" required>
+            <form action="" method="post" autocomplete="off">
+                {% csrf_token %}
+                <input type="text" name="name" placeholder="Name *" required>
+                <input type="email" name="email" placeholder="Email *" required>
+                <input type="text" name="phone" placeholder="Phone No. *" required>
+                <select name="course" required>
                     <option value="" id="courses">Select courses *</option>
                     <option value="pyhton full stack">Python full stack</option>
                     <option value="java full stack">Java full stack</option>
@@ -33,15 +35,20 @@
                     <option value="Embedded">Embedded System-IOT + Linux</option>
                     <option value="UI/UX">UI/UX</option>                    
                 </select>
-                <select name="" required>
-                    <option value="">Duration of Internship *</option>
-                    <option value="">15 Days</option>
-                    <option value="">1 Month</option>
-                    <option value="">3 Months</option>
+                <select name="days" required>
+                    <option value="None">Duration of Internship *</option>
+                    <option value="15 days">15 Days</option>
+                    <option value="1 month">1 Month</option>
+                    <option value="3 months">3 Months</option>
                 </select>
                 <button type="submit">Submit</button>
             </form>
-            <a href="tel://"><button class="but">Call for Internship</button></a>
+            {% if messages %}
+                    {% for message in messages %}
+                    <p style="color: rgb(38, 216, 133);">{{message}}</p>
+                    {% endfor %}
+                {% endif %}
+            <a href="tel://8754002475"><button class="but">Call for Internship</button></a>
         </div>
     </div>
 </section>
@@ -53,7 +60,7 @@
                 <input type="text" placeholder="Name *" required>
                 <input type="email" placeholder="Email *" required>
                 <input type="text" placeholder="Phone No. *" required>
-                <select name="" required>
+                <select name="carcho" required>
                     <option value="">Select role *</option>                    
                     <option value="Web Devepolment">Web Devepolment</option>                    
                     <option value="Web Designer">Web Designer</option>                    
@@ -69,9 +76,9 @@
     </div>
     <div class="carr-r">
         <h2>Careers</h2>
-        <img src="./images/career-choice.png" alt="">
+        <img src="{% static 'images/career-choice.png' %}" alt="">
     </div>
     
 </section>
 {% include 'footer.html' %}
-{% end block %}
+{% endblock %}
