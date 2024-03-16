@@ -4,39 +4,13 @@
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nivedita Infotech</title>
+    <title>Nivedita Infotech{% block title %}{% endblock %}</title>
     <link rel="shortcut icon" href="{% static 'images/logo.png' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <section class="bsec-0" id="bsec-1">
-        <div class="nav">
-            <nav>
-                <ul>
-                    <li><a href="#bsec-1">Home</a></li>
-                    <li><a href="#services" class="inbtn">Services</a>
-                    <div class="in-nav active">
-                        <ul>
-                            <li><a href="">Web Designing</a></li>
-                            <li><a href="">Web Development</a></li>
-                            <li><a href="">Software Development</a></li>
-                            <li><a href="">Mobile App Development</a></li>
-                            <li><a href="">Digital Marketting</a></li>
-                            <li><a href="">Graphic Designing </a></li>
-                        </ul>
-                    </div>
-                    </li>
-                    <li><a href="./carint.html">Careers</a></li>
-                    <li><a href="">About</a></li>                
-                    <li><a href="./contact.html">Contact us</a></li>
-                </ul>
-            </nav>
-            <div class="logo">
-                <img src="{% static 'images/Color logo - no background.png' %}" alt="" width="200px">
-            </div>
-        </div>
-    </section>
+    
     {% block content %}
     {% endblock %}
     

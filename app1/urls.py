@@ -3,5 +3,6 @@ from .import views
 
 urlpatterns=[
     path('',views.home,name='/'),
-    path('contact/',views.contact,name="contacts")
+    path('contact/',views.contact,name="contacts"),
+    
 ]
