@@ -66,6 +66,16 @@ a{
 .in-nav ul li:hover{
     border-bottom: 1px solid white;
 }
+.naicon{
+    display: none;
+}
+.mobnav{
+    display: none;
+}
+.show{
+    display: block;
+}
+
 .banner{
     position: relative;
     display: flex;
@@ -100,7 +110,9 @@ a{
     margin: 20px;
     transition: .7s;
 }
-
+.ban2p{
+    display: none;
+}
 .ban2 p{
     font-size: 20px;
 }
@@ -113,12 +125,16 @@ a{
     line-height: 2;
 }
 
+footer{
+    text-align: center;
+    background-color: whitesmoke;
+}
 
 /* section 2 in home */
 
 .bsec-2{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     background-image: url("./images/bg2.png");
     background-position: center;
     background-size: cover;
@@ -191,9 +207,13 @@ a{
     flex-direction: column;
     
 }
+form{
+    outline: none;
+}
 .forms input{
     border: 1px solid #fff;
     color: white;
+    outline: none;
     background-color: var(--mainback);
     margin: 10px;
     width: 270px;
@@ -676,7 +696,6 @@ a{
         width: 100vw;
         height: fit-content;
         background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)),url("./images/mobile-bg.jpg");
-        background-attachment: fixed;
         background-position: center;
         background-size: cover;
         padding: 20px;
@@ -684,12 +703,43 @@ a{
     .nav{
         display: none;
     }
+    .naicon{
+        display: block;
+    }
+    .naicon button{
+        background: transparent;
+        outline: none;
+        border: none;
+    }
+    .naicon img{
+        width: 40px;
+    }
+    .mobnav nav{
+        position: relative;
+    }
+    .mobnav nav ul{
+        position: absolute;
+        z-index: 5;
+        list-style: none;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        backdrop-filter: blur(10px);
+        width: fit-content;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .mobnav nav ul li{
+        margin: 15px;
+    }
+
     .banner{
         display: flex;
         flex-direction: column;
+        top: 0%;
+        transform: translateY(-20%);
     }
     hr{
-        transform: rotate(90deg);
+        display: none;
     }
     .ban1 h1{
         margin-top: 150px;
@@ -699,6 +749,15 @@ a{
     }
     .ban2 p{
         text-align: center;
+    }
+    .ban2pp{
+        display: none;
+    }
+    .ban2p{
+        display: block;
+        text-align: justify;
+        width: 85vw;
+        padding: 10px;
     }
     br{
         display: none;
@@ -717,6 +776,6 @@ a{
     }
     .lft1{
         width: 100vw;
-        padding-bottom: 20px;
+        padding: 20px 0;
     }
 }

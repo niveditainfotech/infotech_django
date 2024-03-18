@@ -28,6 +28,7 @@
             <img src="{% static 'images/Color logo - no background.png' %}" alt="" width="200px">
         </div>
     </div>
+    {% include 'mobnav.html' %}
     <div class="banner">
         <div class="ban1">
             <h1><span class="banspan">N</span>ivedita</h1>
@@ -35,7 +36,8 @@
         </div>
         <hr style="height: 100px;">
         <div class="ban2">
-            <p>Nivedita Infotech helps businesses <br> create impactful web and mobile applications. <br> We work with business firms of all shapes and sizes .</p>
+            <p class="ban2pp">Nivedita Infotech helps businesses <br> create impactful web and mobile applications. <br> We work with business firms of all shapes and sizes .</p>
+            <p class="ban2p">Nivedita Infotech helps businesses create impactful web and mobile applications. We work with business firms of all shapes and sizes .</p>
         </div>
     </div>
     <div class="post">
@@ -76,8 +78,7 @@
                     {% for message in messages %}
                     <p style="color: rgb(38, 216, 133);">{{message}}</p>
                     {% endfor %}
-                {% endif %}
-                
+                {% endif %}                
             </div>
         </div>
     </div>
