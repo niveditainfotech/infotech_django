@@ -47,7 +47,7 @@
                     {% for message in messages %}
                     <p style="color: rgb(38, 216, 133);">{{message}}</p>
                     {% endfor %}
-                {% endif %}
+            {% endif %}
             <a href="tel://8754002475"><button class="but">Call for Internship</button></a>
         </div>
     </div>
@@ -56,10 +56,11 @@
     <div class="carr-l">
         <div class="carform">
             <h3>Send Resume</h3>
-            <form action="" method="post">
-                <input type="text" placeholder="Name *" required>
-                <input type="email" placeholder="Email *" required>
-                <input type="text" placeholder="Phone No. *" required>
+            <form action="career/" method="post" enctype="multipart/form-data"> 
+                {% csrf_token %}
+                <input type="text" name="name" placeholder="Name *" required>
+                <input type="email" name="email" placeholder="Email *" required>
+                <input type="text" name="phone" placeholder="Phone No. *" required>
                 <select name="carcho" required>
                     <option value="">Select role *</option>                    
                     <option value="Web Devepolment">Web Devepolment</option>                    
@@ -69,9 +70,14 @@
                     <option value="Graphics Designer">Graphics Designer</option>
                     <option value="Office Admin">Office Admin</option>                    
                 </select>
-                <input type="file" required>
+                <input type="file" name="files" required>
                 <button type="submit">Apply</button>
             </form>
+            {% if messages %}
+                    {% for message in messages %}
+                    <p style="color: rgb(38, 216, 133);">{{message}}</p>
+                    {% endfor %}
+            {% endif %}
         </div>
     </div>
     <div class="carr-r">

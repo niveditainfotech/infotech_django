@@ -30,3 +30,13 @@ class Intermship(models.Model):
 
     def __str__(self):
         return self.name
+    
+class Careers(models.Model):
+    name=models.CharField(max_length=20)
+    email=models.EmailField()
+    phone=models.CharField(max_length=10)
+    role=models.CharField(max_length=10)
+    resume=models.FileField(upload_to="resume/")
+
+    def __str__(self):
+        return self.name

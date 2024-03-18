@@ -6,3 +6,4 @@ from .import models
 admin.site.register(models.CallReq)
 admin.site.register(models.contactMsg)
 admin.site.register(models.Intermship)
+admin.site.register(models.Careers)
