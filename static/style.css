@@ -69,6 +69,7 @@ a{
 .banner{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     top: 20%;
     transform: translateY(-50%);
@@ -82,9 +83,9 @@ a{
 }
 .ban1 h1{
     font-size: 70px;
-    background: -webkit-linear-gradient(rgb(42, 99, 165), #fff);
+    background: linear-gradient(rgb(42, 99, 165), #fff);
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
 }
 .ban1 h4{
     font-size: 20px;
@@ -667,4 +668,55 @@ a{
 .carr-r img{
     margin: 50px;
     width: 400px;
+}
+
+@media screen and (max-width:852px) {
+
+    .bsec-1{
+        width: 100vw;
+        height: fit-content;
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)),url("./images/mobile-bg.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+    }
+    .nav{
+        display: none;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    hr{
+        transform: rotate(90deg);
+    }
+    .ban1 h1{
+        margin-top: 150px;
+    }
+    .ban1 h4{
+        margin-top: 20px;
+    }
+    .ban2 p{
+        text-align: center;
+    }
+    br{
+        display: none;
+    }
+    .bsec-2{
+        height: fit-content;
+    }
+    .rit1{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .bc1{
+        margin-right: 0;
+    }
+    .lft1{
+        width: 100vw;
+        padding-bottom: 20px;
+    }
 }
