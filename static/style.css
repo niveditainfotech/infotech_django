@@ -94,8 +94,8 @@ a{
 .ban1 h1{
     font-size: 70px;
     background: linear-gradient(rgb(42, 99, 165), #fff);
-    background-clip: text;
-    /* -webkit-text-fill-color: transparent; */
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 .ban1 h4{
     font-size: 20px;
@@ -830,4 +830,19 @@ form{
         margin: 20px auto;
         width: 250px;
     }
+
+    /* contact page */
+
+    .conbody{
+        height: fit-content;
+        margin: 0;
+        top: 0;
+    }
+    .conf-l{
+        width: 100vw;
+        margin-bottom: 30px;
+    }
+
+
+
 }
