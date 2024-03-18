@@ -487,10 +487,12 @@ form{
     color: white;
     width: 100vw;
     height: 100vh;
+    padding: 20px;
     background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("./images/carbg.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
+    flex-wrap: wrap-reverse;
 }
 
 .car-r{
@@ -620,8 +622,9 @@ form{
 
 .carsec3{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     height: 100vh;
+    width: 100vw;
 }
 .carr-l{
     flex: 1;
@@ -716,10 +719,12 @@ form{
     }
     .mobnav nav{
         position: relative;
+        width: 300px;
     }
     .mobnav nav ul{
         position: absolute;
         z-index: 5;
+        
         list-style: none;
         background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
         backdrop-filter: blur(10px);
@@ -777,5 +782,52 @@ form{
     .lft1{
         width: 100vw;
         padding: 20px 0;
+    }
+
+    /* career & internship */
+    .carsec1{
+        height: fit-content;
+    }
+    .car-r{
+        margin: 30px;
+    }
+
+    .car-r img{
+        width: 300px;
+    }
+
+    .car-l h1{
+        margin: 10px auto;
+        font-size: 2.7em;
+    }
+    .car-l p{
+        width: fit-content;
+        margin: 0;
+    }
+
+    .carsec2{
+        height: fit-content;
+    }
+    .intern-l{
+        margin: 20px auto;
+    }
+    .intern-l img{
+        width: 200px;
+        left: 33%;
+    }
+    .intern-l p{
+        margin-left: 0;
+        text-align: center;
+    }
+    .carsec3{
+        height: fit-content;
+    }
+    .carr-l{
+        width: 100vw;
+        margin: 20% auto;
+    }
+    .carr-r img{
+        margin: 20px auto;
+        width: 250px;
     }
 }
