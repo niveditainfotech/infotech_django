@@ -20,13 +20,14 @@ a{
     color: white;
 }
 .bsec-1{
-    height: 100vh;
+    height: 102vh;
     width: 100vw;
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)),url("./images/bg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    color: white;    
+    color: white;
+    padding: 30px;
 }
 .logo{
     margin: 20px 30px;
@@ -735,6 +736,7 @@ form{
 .sersec{
     height: fit-content;
     display: flex;
+    position: relative;
     flex-direction: column;
 }
 
@@ -760,11 +762,11 @@ form{
 }
 
 .sec1{
-    border: .1px solid gray;
+    border: .1px solid var(--secback);
     border-radius: 10px;
     margin: 30px;
     padding: 30px;
-    box-shadow: 1px 1px 5px 1px gray;
+    box-shadow: 1px 1px 5px 1px var(--secback);
     background-color: aliceblue;
 }
 
@@ -773,20 +775,14 @@ form{
     margin-bottom: 10px;
 }
 .sec1 p{
-    margin: 10px;
+    margin: 20px 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.sernav{
+    position: absolute;
+    top: 1.5%;
+    left: 5%;
+}
 
 @media screen and (max-width:852px) {
     .navba{
@@ -939,7 +935,13 @@ form{
         width: 100vw;
         margin-bottom: 30px;
     }
-
-
+    .serland h1{
+        font-size: 44px;
+    }
+    .serland{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./images/pexels-josh-sorenson-1054397.jpg');
+        background-position: center;
+        background-size: cover;
+    }
 
 }

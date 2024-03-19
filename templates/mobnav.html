@@ -1,18 +1,18 @@
 {% load static %}
-<div class="naicon">
-    <button class="navbtn"><img src="{% static 'images/icons8-menu-bar-50.png' %}" alt="">Button</button>
+<div class="naicon show">
+    <button class="navbtn"><img src="{% static 'images/icons8-menu-bar-50.png' %}" alt=""></button>
 </div>
 <div class="mobnav ">
     <nav>
         <ul> 
             <li><a href="/">Home</a></li>
-            <li><a href="#services">Services</a>
-            <li><a href="">Web Designing</a></li>
+            <li><a href="{% url 'service' %}">Services</a>
+            <!-- <li><a href="">Web Designing</a></li>
             <li><a href="">Web Development</a></li>
             <li><a href="">Software Development</a></li>
             <li><a href="">Mobile App Development</a></li>
             <li><a href="">Digital Marketting</a></li>
-            <li><a href="">Graphic Designing</a></li>
+            <li><a href="">Graphic Designing</a></li> -->
             <li><a href="{% url 'careerintern' %}">Careers</a></li>
             <li><a href="">About</a></li>
             <li><a href="{% url 'contacts' %}">Contact</a></li>

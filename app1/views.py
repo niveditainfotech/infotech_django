@@ -13,7 +13,7 @@ def home(request):
         phone=request.POST.get('phone')
         desc=request.POST.get('desc')
         
-        submit=CallReq.objects.create(name=name,email=email,phone=phone,description=desc).save()
+        CallReq.objects.create(name=name,email=email,phone=phone,description=desc).save()
         messages.success(request,"Send request succesful..")
         return redirect('/')
     return render(request,"home.html")
