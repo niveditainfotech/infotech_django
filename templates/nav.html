@@ -1,0 +1,29 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<div class="navba">
+    <div class="navmenu">
+        <header>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#services" class="inbtn">Services</a>
+                <div class="dronav drop">
+                    <ul>
+                        <li><a href="">Web Designing</a></li>
+                        <li><a href="">Web Development</a></li>
+                        <li><a href="">Software Development</a></li>
+                        <li><a href="">Mobile App Development</a></li>
+                        <li><a href="">Digital Marketting</a></li>
+                        <li><a href="">Graphic Designing </a></li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="{% url 'careerintern' %}">Careers</a></li>
+                <li><a href="">About</a></li>                
+                <li><a href="{% url 'contacts' %}">Contact us</a></li>
+            </ul>
+        </header>
+        <div class="logoos">
+            <!-- logo -->
+        </div>
+    </div>
+</div>
