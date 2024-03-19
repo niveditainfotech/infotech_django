@@ -57,3 +57,7 @@ def career(request):
         Careers.objects.create(name=name,email=email,phone=phone,role=role,resume=file).save()
         messages.success(request,"Resume uploaded successfully..")
         return redirect('careerintern')
+
+
+def service(request):
+    return render(request,"services.html")
