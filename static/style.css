@@ -732,6 +732,62 @@ form{
     padding: 10px;
 }
 
+.sersec{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.serland{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./images/pexels-andrea-piacquadio-845451.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    text-transform: uppercase;
+}
+.serland h1{
+    font-size: 84px;
+}
+.serland p{
+    text-align: center;
+}
+.sersec h2{
+    color: var(--secback);
+}
+
+.sec1{
+    border: .1px solid gray;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 30px;
+    box-shadow: 1px 1px 5px 1px gray;
+    background-color: aliceblue;
+}
+
+.sec1 h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sec1 p{
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:852px) {
     .navba{
         display: none;
