@@ -67,16 +67,6 @@ a{
 .in-nav ul li:hover{
     border-bottom: 1px solid white;
 }
-.naicon{
-    display: none;
-}
-.mobnav{
-    display: none;
-}
-.show{
-    display: block;
-}
-
 .banner{
     position: relative;
     display: flex;
@@ -779,9 +769,7 @@ form{
 }
 
 .sernav{
-    position: absolute;
-    top: 1.5%;
-    left: 5%;
+    display: none;
 }
 
 @media screen and (max-width:852px) {
@@ -798,36 +786,6 @@ form{
     }
     .nav{
         display: none;
-    }
-    .naicon{
-        display: block;
-    }
-    .naicon button{
-        background: transparent;
-        outline: none;
-        border: none;
-    }
-    .naicon img{
-        width: 40px;
-    }
-    .mobnav nav{
-        position: relative;
-        width: 300px;
-    }
-    .mobnav nav ul{
-        position: absolute;
-        z-index: 5;
-        
-        list-style: none;
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-        backdrop-filter: blur(10px);
-        width: fit-content;
-        padding: 20px;
-        font-size: 20px;
-    }
-
-    .mobnav nav ul li{
-        margin: 15px;
     }
 
     .banner{
@@ -942,6 +900,12 @@ form{
         background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./images/pexels-josh-sorenson-1054397.jpg');
         background-position: center;
         background-size: cover;
+    }
+    .sernav{
+        display: block;
+        position: absolute;
+        top: 1.5%;
+        left: 5%;
     }
 
 }

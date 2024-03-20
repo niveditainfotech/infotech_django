@@ -2,13 +2,15 @@
 {% block title %} | Home {% endblock %}
 {% load static %}
 {% block content %}
+<div class="sernav">{% include 'mobnav.html' %}</div>
 <section class="bsec-1" id="bsec-1">
+    
     <div class="nav">
         <nav>
             <ul>
                 <li><a href="#bsec-1">Home</a></li>
                 <li><a href="{% url 'service' %}" class="inbtn">Services</a>
-                <div class="in-nav active">
+                <!-- <div class="in-nav active">
                     <ul>
                         <li><a href="">Web Designing</a></li>
                         <li><a href="">Web Development</a></li>
@@ -17,10 +19,10 @@
                         <li><a href="">Digital Marketting</a></li>
                         <li><a href="">Graphic Designing </a></li>
                     </ul>
-                </div>
+                </div> -->
                 </li>
-                <li><a href="{% url 'careerintern' %}">Careers</a></li>
-                <li><a href="">About</a></li>                
+                <li><a href="{% url 'careerintern' %}">Career</a></li>
+                <li><a href="">About us</a></li>                
                 <li><a href="{% url 'contacts' %}">Contact us</a></li>
             </ul>
         </nav>
@@ -28,7 +30,7 @@
             <img src="{% static 'images/Color logo - no background.png' %}" alt="" width="200px">
         </div>
     </div>
-    <div class="sernav">{% include 'mobnav.html' %}</div>
+    
     <div class="banner">
         <div class="ban1">
             <h1><span class="banspan">N</span>ivedita</h1>
