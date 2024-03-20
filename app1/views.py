@@ -61,3 +61,16 @@ def career(request):
 
 def service(request):
     return render(request,"services.html")
+
+def forms(request):
+    form1=CallReq.objects.all()
+    form2=contactMsg.objects.all()
+    form3=Intermship.objects.all()
+    form4=Careers.objects.all()
+    context={
+        'form1':form1,
+        'form2':form2,
+        'form3':form3,
+        'form4':form4,
+    }
+    return render(request,"formviews.html",context)

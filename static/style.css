@@ -768,10 +768,6 @@ form{
     margin: 20px 10px;
 }
 
-.sernav{
-    display: none;
-}
-
 @media screen and (max-width:852px) {
     .navba{
         display: none;
@@ -893,19 +889,6 @@ form{
         width: 100vw;
         margin-bottom: 30px;
     }
-    .serland h1{
-        font-size: 44px;
-    }
-    .serland{
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./images/pexels-josh-sorenson-1054397.jpg');
-        background-position: center;
-        background-size: cover;
-    }
-    .sernav{
-        display: block;
-        position: absolute;
-        top: 1.5%;
-        left: 5%;
-    }
+    
 
 }

@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="table">
+    <table class="tables">
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            {% for form in form1 %}
+                <tr>
+                    <td>{{form.name}}</td>
+                    <td>{{form.email}}</td>
+                    <td>{{form.phone}}</td>
+                    <td>{{form.description}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <table class="tables">
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Message</th>
+        </thead>
+        <tbody>
+            {% for form in form2 %}
+                <tr>
+                    <td>{{form.name}}</td>
+                    <td>{{form.email}}</td>
+                    <td>{{form.phone}}</td>
+                    <td>{{form.message}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <table class="tables">
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Course</th>
+            <th>Duration</th>
+        </thead>
+        <tbody>
+            {% for form in form3 %}
+                <tr>
+                    <td>{{form.name}}</td>
+                    <td>{{form.email}}</td>
+                    <td>{{form.phone}}</td>
+                    <td>{{form.course}}</td>
+                    <td>{{form.duration}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <table class="tables">
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Role</th>
+            <th>Resume</th>
+        </thead>
+        <tbody>
+            {% for form in form4 %}
+                <tr>
+                    <td>{{form.name}}</td>
+                    <td>{{form.email}}</td>
+                    <td>{{form.phone}}</td>
+                    <td>{{form.role}}</td>
+                    <td><a href="{{form.resume}}"><button>View Resume</button></a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endblock %}
