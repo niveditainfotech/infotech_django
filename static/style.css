@@ -13,12 +13,14 @@
 }
 
 html{
-  font-family: "Open Sans";
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 a{
     text-decoration: none;
     color: white;
 }
+
 .bsec-1{
     height: 102vh;
     width: 100vw;
@@ -772,6 +774,64 @@ form{
 .mnav{
     display: none;
 }
+.about{
+    display: flex;
+    flex-direction: column;
+}
+
+.ab1 p{
+    border: 1px solid var(--mainback);
+    margin: 30px;
+    padding: 20px;
+    line-height: 1.8;
+    text-align: center;
+    box-shadow: 5px 5px  var(--secback);
+}
+
+.about h2{    
+    text-align: center;
+    margin-top: 10px;
+    color: var(--mainback);
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.table h3{
+    text-align: center;
+    color: var(--secback);
+}
+.tables{
+    border-collapse: collapse;
+    margin: 3%;
+    width: 80%;
+    box-shadow: 0 0 1px 1px gray;
+}
+.table thead{
+    border-radius: 10px;
+}
+
+.tables thead{
+    background-color: var(--secback);
+    color: white;
+}
+
+.tables thead th{
+    padding: 4px;
+    text-align: center;
+}
+
+.tables tbody tr td{
+    padding: 4px;
+    text-align: center;
+    border-bottom: .5px solid gray;
+}
+
+.tables tbody tr:nth-last-of-type(odd){
+    background-color: rgb(235, 232, 232);
+}
 
 @media screen and (max-width:852px) {
     .navba{
@@ -915,6 +975,10 @@ form{
         transform: translateY(-30%);
         left: 50%;
         transform: translateX(-50%);
+    }
+    .about h2{
+        position: relative;
+        margin-top: 30%;
     }
 
 }

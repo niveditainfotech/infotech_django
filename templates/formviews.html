@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
-<section class="table">
+<section class="table">   
+    <h3>CALL REQUEST</h3> 
     <table class="tables">
         <thead>
             <th>Name</th>
@@ -19,6 +20,8 @@
             {% endfor %}
         </tbody>
     </table>
+    <hr>
+    <h3>CONTACT FORM</h3>
     <table class="tables">
         <thead>
             <th>Name</th>
@@ -37,6 +40,7 @@
             {% endfor %}
         </tbody>
     </table>
+    <h3>INTERNSHIP</h3>
     <table class="tables">
         <thead>
             <th>Name</th>
@@ -57,6 +61,7 @@
             {% endfor %}
         </tbody>
     </table>
+    <h3>FOR JOB</h3>
     <table class="tables">
         <thead>
             <th>Name</th>
@@ -72,7 +77,7 @@
                     <td>{{form.email}}</td>
                     <td>{{form.phone}}</td>
                     <td>{{form.role}}</td>
-                    <td><a href="{{form.resume}}"><button>View Resume</button></a></td>
+                    <td><a href="/{{form.resume.name}}"><button>View</button></a></td>
                 </tr>
             {% endfor %}
         </tbody>

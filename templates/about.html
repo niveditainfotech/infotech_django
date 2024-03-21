@@ -2,5 +2,14 @@
 {% load static %}
 {% block title %} | About Us {% endblock %}
 {% block content %}
-
+<div class="about">
+    {% include 'nav.html' %}
+    <div class="mnav" style="background-color: black;">{% include 'mobnav.html' %}</div>
+    <h2>ABOUT US</h2>
+    <div class="ab1">
+        <p>Nivedita Infotech is a subsidiary of Nivedita Eduinfotrends Pvt. Ltd. established by distinguished persons Prof. Sethuram is the Managing Director. He is a Post Graduate in English and Education. He has obtained PGDTE in CIEFL, Hyderabad.Mrs.  Er.Nivedita, BE, MBA, M.Phil; and  ER. Rajkishore Kumar, ME;  working overseas in USA are its directors.</p>
+        <p>Nivedita Infotech has been a top-ranked web development agency and one-stop-shop for Web design and Development, Software Development, Mobile Application Development,Graphic Designing and Digital Marketing. With over 250+ websites, 100+ software, 50+ mobile apps and 150+ Digital marketting services successfully launched, our skilled web development team will deliver exactly what you need. Get in touch with us today to begin building a stunning website that drives your revenue.</p>
+    </div>
+</div>
+{% include 'footer.html' %}
 {% endblock %}

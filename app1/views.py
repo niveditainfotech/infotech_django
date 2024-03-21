@@ -74,3 +74,6 @@ def forms(request):
         'form4':form4,
     }
     return render(request,"formviews.html",context)
+
+def about(request):
+    return render(request,"about.html")
