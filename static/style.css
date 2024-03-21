@@ -79,7 +79,7 @@ a{
 }
 
 .ban1{
-    margin: 20px;
+    margin: 20px 8px;
     transition: .8s;
 }
 .ban1 h1{
@@ -98,7 +98,7 @@ a{
     color: rgb(42, 99, 165);
 }
 .ban2{
-    margin: 20px;
+    margin: 20px 8px;
     transition: .7s;
 }
 .ban2p{
@@ -743,6 +743,7 @@ form{
 }
 .serland h1{
     font-size: 84px;
+    text-align: center;
 }
 .serland p{
     text-align: center;
@@ -766,6 +767,10 @@ form{
 }
 .sec1 p{
     margin: 20px 10px;
+}
+
+.mnav{
+    display: none;
 }
 
 @media screen and (max-width:852px) {
@@ -889,6 +894,27 @@ form{
         width: 100vw;
         margin-bottom: 30px;
     }
+    .serland h1{
+        font-size: 64px;
+    }
+    .serland{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./images/pexels-josh-sorenson-1054397.jpg');
+        background-position: center;
+        background-size: cover;
+    }
     
+    .mnav{
+        display: block;
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .mnavcar{
+        top: 1%;
+        transform: translateY(-30%);
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
 }

@@ -1,4 +1,37 @@
 {% load static %}
-<section>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    .navlist ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: transparent;
+        list-style: none;
+
+    }
+    .navlist ul li{
+        margin: 15px ;
+    }
+    .navlist ul li i{
+        font-size: 25px;
+    }
+
+    .navlist ul li a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+    }
     
+</style>
+<section class="mobinav">
+    <div class="navlist">
+        <ul>
+            <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-info"></i>About</a></li>
+            <li><a href="{% url 'service' %}" class="inbtn"><i class="fa fa-gears"></i>Service</a></li>
+            <li><a href="{% url 'careerintern' %}"><i class="fa fa-group">&#xf0c0;</i>Career</a></li>
+            <li><a href="{% url 'contacts' %}"><i class="fa fa-phone"></i>Contact</a></li>
+        </ul>
+    </div>
 </section>
